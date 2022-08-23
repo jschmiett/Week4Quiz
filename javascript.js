@@ -4,24 +4,24 @@ var gameProgress = 0
 
 var questionArray = [
     {
-        question: "1st Question",
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        correctAnswer: "Option B"
+        question: "The DOM is:",
+        options: ["Directory of Model", "Document Object Model", "Directory of Object Management", "Department of Magic"],
+        correctAnswer: "Document Object Model"
     },
     {
-        question: "2nd Question",
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        correctAnswer: "Option B"
+        question: "CRUD stands for:",
+        options: ["Create, Review, Update, Delete", "Can Read Ur Data", "Create, Read, Update, Delete", "Create, Review, Update, Data"],
+        correctAnswer: "Create, Read, Update, Delete"
     },
     {
-        question: "3rd Question",
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        correctAnswer: "Option B"
+        question: "MERN stands for:",
+        options: ["Mangos Eat Right Now!", "Mongoose, Express, React, NoSql", "MongoDB, Express, React, NoSql", "MongoDB, Express, React, Node"],
+        correctAnswer: "MongoDB, Express, React, Node"
     },
     {
-        question: "4th Question",
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        correctAnswer: "Option B"
+        question: "Which Values are False-y?",
+        options: ["False, 0, -0, On, "", '', ``, null, undefined, NaN, document.all", "False, 0, -0, On, -On, "", '', ``, null, undefined, NaN", "False, 0, -0, On, -On, "", '', ``, null, undefined, NaN, document.all", "False, 0, On, "", '', ``, null, undefined, NaN, document.all"],
+        correctAnswer: "False, 0, -0, On, "", '', ``, null, undefined, NaN, document.all"
     },
     {
         question: "5th Question",
