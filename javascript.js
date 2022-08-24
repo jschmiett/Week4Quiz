@@ -46,8 +46,6 @@ function countdown() {
         } else {
             // Once `timeLeft` gets to 0, set `timerEl` to an empty string
             timerEl.textContent = '';
-            // Use `clearInterval()` to stop the timer
-            clearInterval(timeInterval);
             // Call the `displayMessage()` function
             endGame();
         }
@@ -75,6 +73,7 @@ function verifyAnswer() {
         console.log("correct")
     } else {
         console.log("incorrect");
+        timeLeft - 10;
     }
     gameProgress++
     if (gameProgress > questionArray.length - 1) {
@@ -86,6 +85,7 @@ function verifyAnswer() {
 }
 
 function endGame() {
+    // Use `clearInterval()` to stop the timer
     document.getElementById("quiz").classList.add("hide");
     document.getElementById("endGame").classList.remove("hide");
 };
@@ -93,7 +93,8 @@ function endGame() {
 document.getElementById("endGameSubmitButton").addEventListener("click", function () {
     var initials = document.getElementById("initials").value;
     console.log(initials);
-    // save player to local storage
+    localStorage.setItem("initials", initials);
+    localStorage.setItem("score", timeLeft)
 })
 
 console.log(questionArray[2].question)
